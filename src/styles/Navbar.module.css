@@ -1,0 +1,28 @@
+.navbarContainer{
+  width: 90vw;
+  max-width: 1170px ;
+}
+
+
+.navbarCenter{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.navbarLinks{
+  display: flex;
+  width: 20rem;
+  justify-content: space-around;
+}
+
+
+@media screen and (min-width: 600px){
+  .navbarLinks{
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 992px){
+
+}
