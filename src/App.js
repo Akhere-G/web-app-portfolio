@@ -26,8 +26,13 @@ function App() {
           </Route>
         </Switch>
       </main>
-      <footer>
-        
+      <footer className={styles.footer}>
+        <span>
+          <p>
+            Akhere Ihoeghinlan &copy; 2020
+          </p>
+        </span>
+
       </footer>
     </div>
   );
