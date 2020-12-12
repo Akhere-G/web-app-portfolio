@@ -37,6 +37,7 @@ a {
 a:hover {
   color: var(--text-secondary-color);
   transition: var(--transition);
+  cursor: pointer;
 }
 
 button {

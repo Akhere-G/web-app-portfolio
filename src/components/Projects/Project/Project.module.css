@@ -1,0 +1,43 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project header {
+  width: 100%;
+}
+
+.project header img {
+  width: 100%;
+  height: 100%;
+}
+
+.project footer {
+  background-color: #0008;
+  padding: 1em;
+  margin-bottom: 3em;
+}
+
+.desc {
+  margin-bottom: 1em;
+}
+.data {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+}
+
+.data span {
+  background-color: #8808;
+  padding: 0.4em;
+  border-radius: 0.4em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.data a:hover {
+  transform: scale(1.02);
+}
+.lol {
+}

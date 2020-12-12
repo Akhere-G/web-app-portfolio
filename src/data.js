@@ -10,7 +10,7 @@ const data = [
     desc: `A chat app built using react for the front end and firebase for the 
     authentication and the database. The app allows users to login and 
     send messages to a public group chat. The user can delete their own 
-    messages as well,`,
+    messages as well.`,
     github: "https://github.com/Akhere-G/chat-app",
     technologies: ["React", "Firebase"],
   },
@@ -20,7 +20,7 @@ const data = [
     img: movieSearchImg,
     desc: ` This website is built using react for the front end. The api used is 
   themoviedb. A global context is used to manage state and a high order 
-  component is used to load images with a fade in animation`,
+  component is used to load images with a fade in animation.`,
 
     github: "https://github.com/Akhere-G/movie-search-app",
     technologies: ["React"],

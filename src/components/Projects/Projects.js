@@ -1,13 +1,16 @@
 import React from "react";
-const dets = { dets: "title, url, img, desc, info, github, technologies" };
-//import Project from "./Project";
+import Project from "./Project/Project";
+import styles from "./Projects.module.css";
+
 const Projects = ({ projects }) => {
   return (
-    <ul>
-      {projects.map((project, index) => {
-        return <div>{JSON.stringify(project)}</div>;
-      })}
-    </ul>
+    <main className={styles.projects}>
+      <ul className={styles.list}>
+        {projects.map((project, index) => {
+          return <Project key={index} {...project} />;
+        })}
+      </ul>
+    </main>
   );
 };
 
