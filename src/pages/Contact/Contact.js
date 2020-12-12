@@ -14,7 +14,9 @@ const Contact = () => {
       <hr />
 
       <p>Email: AkhereAIhoeghinlan@gmail.com</p>
-      <p>Github: Akhere-G</p>
+      <p>
+        Github: <a href='https://github.com/Akhere-G'>Akhere-G</a>
+      </p>
     </section>
   );
 };
