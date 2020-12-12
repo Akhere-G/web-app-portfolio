@@ -1,5 +1,5 @@
 import styles from "./App.module.css";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { Home, About, Contact, Error } from "./pages";
 import { Navbar } from "./components";
 function App() {
