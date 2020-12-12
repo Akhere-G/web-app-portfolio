@@ -1,4 +1,4 @@
-:root{
+:root {
   --primary-color: #357;
   --secondary-color: #135;
 
@@ -6,7 +6,6 @@
   --text-secondary-color: #ffc;
 
   --transition: ease-in-out 300ms;
-
 }
 
 * {
@@ -16,16 +15,14 @@
   font-weight: 6000px;
 }
 
-html, body {
+html,
+body {
   height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-primary-color);
   background: var(--primary-color);
   scroll-behavior: smooth;
 }
-
-
-
 
 li {
   list-style: none;
@@ -35,47 +32,37 @@ a {
   text-decoration: none;
   color: var(--text-primary-color);
   transition: var(--transition);
-
 }
 
-a:hover{
+a:hover {
   color: var(--text-secondary-color);
   transition: var(--transition);
 }
 
-button{
+button {
   padding: 5px;
   border-radius: 5px;
   border: solid 1px var(--text-primary-color);
   background: rgba(0, 0, 0, 0.3);
   color: var(--text-primary-color);
   transition: var(--transition);
-  
 }
-button:hover{
+button:hover {
   background: rgba(0, 0, 0, 0.7);
   color: var(--text-secondary-color);
   border: solid 1px var(--text-secondary-color);
   transition: var(--transition);
   cursor: pointer;
-
 }
 
-.btn-container{
+.btn-container {
   padding: 1rem;
 }
 
-.section{
+.section {
   padding: 0.4rem;
   width: 100%;
-  align-items: center;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
-
-
-
-
-
-

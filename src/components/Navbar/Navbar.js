@@ -1,31 +1,29 @@
-import React from 'react'
-import styles from "../styles/Navbar.module.css"
-import { Link, BrowserRouter as Router } from "react-router-dom"
+import React from "react";
+import styles from "./Navbar.module.css";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 const Navbar = () => {
   return (
     <header className={styles.navbarContainer}>
       <nav className={styles.navbarCenter}>
-        <div >
+        <div>
           <h4>
-            <Link to="/">Akhere Ihoeghinlan</Link>
+            <Link to='/'>Akhere Ihoeghinlan</Link>
           </h4>
         </div>
         <ul className={styles.navbarLinks}>
           <li className={styles.navbarLink}>
-            <Link to="/">home</Link>
+            <Link to='/'>home</Link>
           </li>
           <li className={styles.navbarLink}>
-            <Link to="/about">about</Link>
+            <Link to='/about'>about</Link>
           </li>
           <li className={styles.navbarLink}>
-            <Link to="/contact">contact</Link>
+            <Link to='/contact'>contact</Link>
           </li>
         </ul>
       </nav>
-
     </header>
+  );
+};
 
-  )
-}
-
-export default Navbar
+export default Navbar;
