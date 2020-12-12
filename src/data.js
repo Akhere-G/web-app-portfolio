@@ -16,7 +16,7 @@ const data = [
   },
   {
     title: "Movie Search",
-    url: "https://akheresearchmovie.netlify.app/about",
+    url: "https://ai-search-movie.netlify.app/about",
     img: movieSearchImg,
     desc: ` This website is built using react for the front end. The api used is 
   themoviedb. A global context is used to manage state and a high order 
@@ -27,7 +27,7 @@ const data = [
   },
   {
     title: "Blog Site",
-    url: "https://akhere-blog-site.netlify.app/",
+    url: "https://ai-blog-site.netlify.app/",
     img: blogSiteImg,
     desc: `A blog site that displays markdown blogs. This website is built using 
     Gatsby for the front end and Contentful for the CMS.`,
