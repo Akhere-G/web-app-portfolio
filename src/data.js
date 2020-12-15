@@ -1,6 +1,7 @@
 import chatAppImg from "./assets/chatAppPage.jpeg";
 import movieSearchImg from "./assets/movieSearchPage.jpeg";
 import blogSiteImg from "./assets/blogSitePage.jpeg";
+import expenseTrackerImg from "./assets/expenseTrackerPage.jpeg";
 
 const data = [
   {
@@ -36,6 +37,16 @@ const data = [
 
     github: "https://github.com/Akhere-G/gatsby-blog-site",
     technologies: ["React", "Gatsby", "Contentful"],
+  },
+  {
+    title: "Expense Tracker",
+    url: "https://ai-expense-tracker.netlify.app/",
+    img: expenseTrackerImg,
+    desc: `An app that tracks expenses and income. Users can add a title for the expense/income and an
+    amount. A negative amount for an expense and a positive amount for an
+    income. Filter transactions to show only expenses, incomes or both. 
+    A reducer is used to control the state.`,
+    technologies: ["React"],
   },
 ];
 
