@@ -46,6 +46,7 @@ const data = [
     amount. A negative amount for an expense and a positive amount for an
     income. Filter transactions to show only expenses, incomes or both. 
     A reducer is used to control the state.`,
+    github: "https://github.com/Akhere-G/Expense-tracker-app",
     technologies: ["React"],
   },
 ];
