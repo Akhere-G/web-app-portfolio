@@ -3,7 +3,8 @@ import styles from "./Project.module.css";
 
 const Project = ({ title, slug, url, img, desc, github, technologies }) => {
   return (
-    <div className={styles.project} id={slug}>
+    <div className={styles.project}>
+      <div id={slug} className={styles.target}></div>
       <header>
         <img src={img} alt={title} />
       </header>

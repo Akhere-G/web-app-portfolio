@@ -3,7 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 1em;
+  margin: 1em auto;
+  position: relative;
+}
+
+.target {
+  position: absolute;
+  top: -3em;
 }
 
 .project > header > img {
@@ -31,10 +37,4 @@
   border-radius: 0.4em;
   margin-right: 0.5em;
   margin-bottom: 0.5em;
-}
-
-@media screen and (min-width: 600px) {
-  .project {
-    padding-top: 3em;
-  }
 }

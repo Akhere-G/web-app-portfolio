@@ -9,6 +9,7 @@
   top: 0;
   left: 0;
   transition: var(--transition);
+  z-index: 10;
 }
 
 .projectLinks li {
