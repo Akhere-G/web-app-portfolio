@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Project.module.css";
 
-const Project = ({ title, url, img, desc, github, technologies }) => {
+const Project = ({ title, slug, url, img, desc, github, technologies }) => {
   return (
-    <div className={styles.project}>
+    <div className={styles.project} id={slug}>
       <header>
         <img src={img} alt={title} />
       </header>

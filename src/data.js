@@ -6,6 +6,8 @@ import expenseTrackerImg from "./assets/expenseTrackerPage.jpeg";
 const data = [
   {
     title: "Chat App",
+    slug: "chat-app",
+
     url: "https://chat-app-34dd1.web.app/",
     img: chatAppImg,
     desc: `A chat app built using react for the front end and firebase for the 
@@ -17,6 +19,7 @@ const data = [
   },
   {
     title: "Movie Search",
+    slug: "movie-search",
     url: "https://ai-search-movie.netlify.app/about",
     img: movieSearchImg,
     desc: `This website is built using react for the front end. The API used is 
@@ -29,6 +32,7 @@ const data = [
   },
   {
     title: "Blog Site",
+    slug: "blog-site",
     url: "https://ai-blog-site.netlify.app/",
     img: blogSiteImg,
     desc: `A blog site that displays markdown blog posts. This website is built using 
@@ -40,6 +44,7 @@ const data = [
   },
   {
     title: "Expense Tracker",
+    slug: "expense-tracker",
     url: "https://ai-expense-tracker.netlify.app/",
     img: expenseTrackerImg,
     desc: `An app that tracks expenses and income. Users can add a title for the expense/income and an

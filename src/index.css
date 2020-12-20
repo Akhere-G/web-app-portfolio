@@ -3,7 +3,7 @@
   --secondary-color: #135;
 
   --text-primary-color: #f1f7ff;
-  --text-secondary-color: #ffc;
+  --text-secondary-color: #ff8;
 
   --transition: ease-in-out 300ms;
 }
@@ -34,10 +34,13 @@ a {
   transition: var(--transition);
 }
 
-a:hover {
+.active,
+a:hover,
+a:focus {
   color: var(--text-secondary-color);
   transition: var(--transition);
   cursor: pointer;
+  outline: none;
 }
 
 button {
