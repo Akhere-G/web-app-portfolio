@@ -1,13 +1,9 @@
 .navbarContainer {
-  width: 100%;
-}
-
-.navbarCenter {
-  margin: auto;
-  width: 100%;
-  max-width: 750px;
-
   display: flex;
+  width: 100%;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: var(--max-width);
   justify-content: space-between;
   align-items: baseline;
 }
@@ -18,5 +14,5 @@
 }
 
 .navbarLink {
-  margin-right: 1em;
+  margin-left: 1em;
 }

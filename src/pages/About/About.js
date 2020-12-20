@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className='section'>
       <h3>About Me</h3>
-      <p className={styles.aboutParagraph}>
+      <p>
         My name is Akhere Ihoeghinlan. I am a Computer Science student at UCL
         and a web developer, who is passionate about building intresting
         websites. I know HTML, CSS, Javascript, React, Java. In my spare time, I

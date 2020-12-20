@@ -4,13 +4,11 @@ import styles from "./Projects.module.css";
 
 const Projects = ({ projects }) => {
   return (
-    <main className={styles.projects}>
-      <ul className={styles.list}>
-        {projects.map((project, index) => {
-          return <Project key={index} {...project} />;
-        })}
-      </ul>
-    </main>
+    <ul className='section'>
+      {projects.map((project, index) => {
+        return <Project key={index} {...project} />;
+      })}
+    </ul>
   );
 };
 

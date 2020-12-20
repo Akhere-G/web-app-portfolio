@@ -7,13 +7,13 @@ const Home = () => {
     slug: project.slug,
   }));
   return (
-    <div>
-      <section className='section'>
-        <h3>My Projects</h3>
+    <>
+      <section>
+        <h3 className='section'>My Projects</h3>
         <ProjectLinks projectLinks={projectLinks} />
         <Projects projects={data} />
       </section>
-    </div>
+    </>
   );
 };
 

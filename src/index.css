@@ -1,11 +1,10 @@
 :root {
   --primary-color: #357;
   --secondary-color: #135;
-
   --text-primary-color: #f1f7ff;
   --text-secondary-color: #ff8;
-
   --transition: ease-in-out 300ms;
+  --max-width: 900px;
 }
 
 * {
@@ -65,9 +64,18 @@ button:hover {
 }
 
 .section {
-  padding: 0.4rem;
   width: 100%;
-  margin: 0 auto;
+  padding: 1em;
   display: flex;
   flex-direction: column;
+  margin: auto;
+  width: 100%;
+  max-width: var(--max-width);
+
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.section h3 {
+  margin-bottom: 0.5em;
 }
