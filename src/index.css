@@ -17,11 +17,12 @@
 
 html,
 body {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-primary-color);
   background: var(--primary-color);
-  scroll-behavior: smooth;
 }
 
 li {
