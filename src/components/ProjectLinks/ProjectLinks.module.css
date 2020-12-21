@@ -1,7 +1,6 @@
 .projectLinks {
   width: 100%;
   padding: 1em 0;
-  top: 0;
   left: 0;
   transition: var(--transition);
   z-index: 10;
@@ -10,7 +9,7 @@
   align-items: center;
   height: 3em;
   position: fixed;
-  top: 7em;
+  top: -300px;
 }
 
 .moving {
@@ -22,7 +21,6 @@
 .modal {
   display: flex;
   position: absolute;
-  right: 0;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
