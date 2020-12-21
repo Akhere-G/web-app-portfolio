@@ -1,24 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Navbar.module.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import MenuIcon from "@material-ui/icons/Menu";
+
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const { pathname } = useLocation();
+
+  const links = [
+    { title: "home", slug: "" },
+    { title: "about", slug: "/about" },
+    { title: "contact", slug: "/contact" },
+  ];
   return (
-    <header className={styles.navbarContainer}>
-      <h1>
-        <Link to='/'>Akhere Ihoeghinlan</Link>
-      </h1>
-      <ul className={styles.navbarLinks}>
-        <li className={styles.navbarLink}>
-          <Link to='/'>home</Link>
-        </li>
-        <li className={styles.navbarLink}>
-          <Link to='/about'>about</Link>
-        </li>
-        <li className={styles.navbarLink}>
-          <Link to='/contact'>contact</Link>
-        </li>
+    <div className={styles.navbar}>
+      <Link to='/'>
+        <h3>Akhere Ihoeghinlan</h3>
+      </Link>
+      <ul
+        className={`${styles.modal} ${
+          open ? styles.openModal : styles.closeModal
+        }`}
+      >
+        {links.map((link, index) => {
+          console.log(pathname, link.slug);
+          return (
+            <li key={index}>
+              <Link
+                to={`${link.slug}`}
+                className={`${pathname === link.slug ? "active" : ""}`}
+              >
+                {link.title}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
-    </header>
+
+      <div
+        className={styles.toggleBtn}
+        onClick={() => {
+          setOpen(prev => !prev);
+        }}
+      >
+        <MenuIcon />
+      </div>
+    </div>
   );
 };
 
