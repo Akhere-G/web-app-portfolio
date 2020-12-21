@@ -53,6 +53,8 @@
 .toggleBtn {
   margin-right: 1em;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 600px) {
