@@ -47,6 +47,14 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  transform: rotate3d(0, 0, 0, 0deg);
+  transition: var(--transition);
+}
+
+.toggleBtn:hover {
+  transform: rotate3d(0, 0, 1, 90deg);
+  color: #fff;
+  transition: var(--transition);
 }
 
 @media screen and (min-width: 600px) {
