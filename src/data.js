@@ -33,7 +33,7 @@ const data = [
   },
   {
     title: "Exercise Tracker",
-    slug: "chat-app",
+    slug: "exercise-tracker",
 
     url: "https://ai-exercise-tracker.netlify.app/",
     img: exerciseTrackerImg,
