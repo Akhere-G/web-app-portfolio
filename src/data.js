@@ -2,6 +2,7 @@ import chatAppImg from "./assets/chatAppPage.jpeg";
 import movieSearchImg from "./assets/movieSearchPage.jpeg";
 import blogSiteImg from "./assets/blogSitePage.jpeg";
 import expenseTrackerImg from "./assets/expenseTrackerPage.jpeg";
+import exerciseTrackerImg from "./assets/exerciseTrackerPage.png";
 
 const data = [
   {
@@ -29,6 +30,19 @@ const data = [
 
     github: "https://github.com/Akhere-G/movie-search-app",
     technologies: ["React"],
+  },
+  {
+    title: "Exercise Tracker",
+    slug: "chat-app",
+
+    url: "https://ai-exercise-tracker.netlify.app/",
+    img: exerciseTrackerImg,
+    desc: `A exercise tracker app made so teachers can assign exercise to students. 
+    It is built using react for the front end, Express for the backend, MongoDB for 
+    the database and Mongoose for data modelling. The app allows users to make new 
+    students and add exercises to existing users. Exercises can be updated and deleted.`,
+    github: "https://github.com/Akhere-G/mern-exercise-tracker-app",
+    technologies: ["MongoDB", "Express", "React", "Node"],
   },
   {
     title: "Blog Site",
