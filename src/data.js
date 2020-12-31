@@ -2,7 +2,7 @@ import chatAppImg from "./assets/chatAppPage.jpeg";
 import movieSearchImg from "./assets/movieSearchPage.jpeg";
 import blogSiteImg from "./assets/blogSitePage.jpeg";
 import expenseTrackerImg from "./assets/expenseTrackerPage.jpeg";
-import exerciseTrackerImg from "./assets/exerciseTrackerPage.png";
+import exerciseTrackerImg from "./assets/exerciseTrackerPage.jpeg";
 
 const data = [
   {

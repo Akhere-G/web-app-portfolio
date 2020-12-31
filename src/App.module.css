@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./assets/hero.jpg");
+    url("./assets/hero.jpeg");
   min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
