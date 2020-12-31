@@ -72,6 +72,7 @@
     flex-direction: row;
     background-color: transparent;
     padding: 0em;
+    height: 0;
   }
 
   .closeModal {

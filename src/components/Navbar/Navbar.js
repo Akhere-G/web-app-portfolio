@@ -23,7 +23,6 @@ const Navbar = () => {
         }`}
       >
         {links.map((link, index) => {
-          console.log(pathname, link.slug);
           return (
             <li key={index}>
               <Link
