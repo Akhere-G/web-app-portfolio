@@ -12,9 +12,12 @@ const data = [
 
     url: "https://storytime-ai.herokuapp.com",
     img: storytimeImg,
-    desc: `A social media app where users can make an account and share, create, 
-    update and add stories. Built using the MERN stack. Authentication via json web 
-    tokens. By Akhere Ihoeghinlan.`,
+    desc: `Storytime is a social app that allows users to create and 
+    share stories. Users can create accounts, login and add their 
+    favourite stories for other users to see. Stories can also be 
+    deleted and added. Authentication is done by json web tokens, 
+    the front end is built using React, MongoDB is used for the 
+    database, and express and node are used to create the rest api.`,
     github: "https://github.com/Akhere-G/auth-storytime",
     technologies: ["MongoDB", "Express", "React", "Node"],
   },
