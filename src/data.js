@@ -7,7 +7,7 @@ import exerciseTrackerImg from "./assets/exerciseTrackerPage.jpeg";
 
 const data = [
   {
-    title: "Storytime social app",
+    title: "Storytime",
     slug: "storytime-app",
 
     url: "https://storytime-ai.herokuapp.com",
