@@ -1,10 +1,23 @@
 import chatAppImg from "./assets/chatAppPage.jpeg";
+import storytimeImg from "./assets/storytimePage.jpeg";
 import movieSearchImg from "./assets/movieSearchPage.jpeg";
 import blogSiteImg from "./assets/blogSitePage.jpeg";
 import expenseTrackerImg from "./assets/expenseTrackerPage.jpeg";
 import exerciseTrackerImg from "./assets/exerciseTrackerPage.jpeg";
 
 const data = [
+  {
+    title: "Storytime social app",
+    slug: "storytime-app",
+
+    url: "https://storytime-ai.herokuapp.com",
+    img: storytimeImg,
+    desc: `A social media app where users can make an account and share, create, 
+    update and add stories. Built using the MERN stack. Authentication via json web 
+    tokens. By Akhere Ihoeghinlan.`,
+    github: "https://github.com/Akhere-G/auth-storytime",
+    technologies: ["MongoDB", "Express", "React", "Node"],
+  },
   {
     title: "Chat App",
     slug: "chat-app",
