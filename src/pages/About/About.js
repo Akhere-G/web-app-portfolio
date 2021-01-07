@@ -6,8 +6,7 @@ const About = () => {
       <p>
         My name is Akhere Ihoeghinlan. I am a Computer Science student at UCL
         and a web developer, who is passionate about building intresting
-        websites. I know HTML, CSS, Javascript, React, Java. In my spare time, I
-        make games in Unity and read my favourite fantasy books.
+        websites. I usually use React but I am open to other frameworks.
       </p>
     </section>
   );
