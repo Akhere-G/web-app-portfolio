@@ -12,6 +12,10 @@
   top: -3em;
 }
 
+.project > header {
+  width: 100%;
+}
+
 .project > header > img {
   width: 100%;
   height: 100%;

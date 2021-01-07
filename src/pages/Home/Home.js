@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <section>
-        <h3 className='section'>My Projects</h3>
+        <h2 className='section'>My Projects</h2>
         <ProjectLinks projectLinks={projectLinks} />
         <Projects projects={data} />
       </section>

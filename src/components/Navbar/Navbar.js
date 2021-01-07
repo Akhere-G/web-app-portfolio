@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <Link to='/'>
-        <h3>Akhere Ihoeghinlan</h3>
+        <h1>Akhere Ihoeghinlan</h1>
       </Link>
       <ul
         className={`${styles.modal} ${
