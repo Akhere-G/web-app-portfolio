@@ -17,7 +17,6 @@ const Navbar = ({ links, title }) => {
       onBlurCapture={e => {
         if (!e.currentTarget.contains(e.relatedTarget)) {
           setOpen(false);
-          console.log("hit");
         }
       }}
     >
