@@ -17,14 +17,14 @@ const data = [
     favourite stories for other users to see. Stories can also be 
     deleted and added. Authentication is done by json web tokens, 
     the front end is built using React, MongoDB is used for the 
-    database, and express and node are used to create the rest api.`,
+    database, and express and node are used to create the rest api. 
+    Hosted on heroku free tier so might take sometime to load.`,
     github: "https://github.com/Akhere-G/auth-storytime",
     technologies: ["MongoDB", "Express", "React", "Node"],
   },
   {
     title: "Chat App",
     slug: "chat-app",
-
     url: "https://chat-app-34dd1.web.app/",
     img: chatAppImg,
     desc: `A chat app built using react for the front end and firebase for the 
@@ -37,7 +37,7 @@ const data = [
   {
     title: "Movie Search",
     slug: "movie-search",
-    url: "https://ai-search-movie.netlify.app/about",
+    url: "https://ai-search-movie.netlify.app",
     img: movieSearchImg,
     desc: `This website is built using react for the front end. The API used is 
     Themoviedb. A global context is used to manage state and a higher order component 
