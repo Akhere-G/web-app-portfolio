@@ -1,9 +1,49 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "./Project.module.css";
 
-const Project = ({ title, slug, url, img, desc, github, technologies }) => {
+const Project = ({
+  title,
+  slug,
+  url,
+  img,
+  desc,
+  github,
+  technologies,
+  slideInRight,
+}) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const projectRef = useRef(null);
+  const show = slideInRight ? styles.slideInRight : styles.slideInLeft;
+  const hide = slideInRight ? styles.slideOutRight : styles.slideOutLeft;
+
+  useEffect(() => {
+    const checkIsVisible = () => {
+      if (projectRef) {
+        const rect = projectRef.current.getBoundingClientRect();
+        const projectTop = rect.top + 100;
+        const height = window.innerHeight;
+        if ((projectTop => 0) && projectTop <= height) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      }
+    };
+
+    checkIsVisible();
+    window.addEventListener("scroll", checkIsVisible);
+
+    return () => {
+      window.removeEventListener("scroll", checkIsVisible);
+    };
+  }, []);
+
   return (
-    <div className={styles.project}>
+    <div
+      className={`${styles.project} ${isVisible ? show : hide}`}
+      ref={projectRef}
+      name={slug}
+    >
       <div id={slug} className={styles.target}></div>
       <header>
         <img src={img} alt={title} />
