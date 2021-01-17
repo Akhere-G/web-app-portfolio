@@ -1,8 +1,11 @@
 .container {
-  background-color: var(--secondary);
+  background-color: var(--text-primary-color);
+  color: var(--primary-color);
+
   z-index: 999;
   width: 100%;
 }
+
 .navbar {
   width: 100%;
   display: flex;
@@ -13,10 +16,29 @@
   max-width: var(--max-width);
   z-index: 999;
   height: 50px;
+  animation: slideIn 600ms ease-in 200ms backwards;
+  position: relative;
+}
+
+@keyframes slideIn {
+  0% {
+    top: -10rem;
+    opacity: 0;
+  }
+
+  100% {
+    top: -0rem;
+    opacity: 1;
+  }
 }
 
 .logo {
   font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.logo:hover {
+  color: var(--text-secondary-color);
 }
 
 .navbarLinks {
@@ -78,6 +100,9 @@
 
 .navbarBtn:hover {
   transform: rotate(90deg);
+  background-color: transparent;
+  color: var(--text-secondary-color);
+  border-color: var(--text-secondary-color);
   transition: var(--transition);
 }
 
@@ -88,7 +113,6 @@
   }
 
   .navbarLinks {
-    position: static;
     flex-direction: row;
     flex: 1;
     margin-left: 1em;
@@ -99,6 +123,29 @@
     padding-bottom: 0;
     opacity: 1;
     pointer-events: all;
+    top: 0;
+    right: 0rem;
+    animation: slideInLinks 1200ms ease-in-out 800ms forwards;
+    opacity: 0;
+
+    position: relative;
+  }
+
+  @keyframes slideInLinks {
+    0% {
+      opacity: 0;
+      left: -5rem;
+    }
+
+    75% {
+      opacity: 0.9;
+      left: 1rem;
+    }
+
+    100% {
+      left: 0rem;
+      opacity: 1;
+    }
   }
   .navbarLink {
     width: auto;

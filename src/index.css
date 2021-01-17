@@ -2,7 +2,7 @@
   --primary-color: #357;
   --secondary-color: #135;
   --text-primary-color: #f1f7ff;
-  --text-secondary-color: #ff8;
+  --text-secondary-color: #fc4;
   --transition: ease-in-out 300ms;
   --max-width: 950px;
 }
@@ -34,7 +34,6 @@ a {
   transition: var(--transition);
 }
 
-.active,
 a:hover,
 a:focus {
   color: var(--text-secondary-color);
@@ -65,7 +64,7 @@ button:hover {
 
 .section {
   width: 100%;
-  padding: 0 1em;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   margin: 0 auto;

@@ -13,7 +13,7 @@
 }
 
 .moving {
-  background-color: #0008;
+  background-color: #000022dd;
   transition: var(--transition);
   top: 0;
 }
@@ -27,7 +27,7 @@
   position: absolute;
   align-items: center;
   flex-direction: column;
-  background-color: #000d;
+  background-color: #001d;
   padding: 1em;
   height: 100vh;
   right: -500px;

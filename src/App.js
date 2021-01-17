@@ -3,9 +3,14 @@ import { Switch, Route } from "react-router-dom";
 import { Home, About, Contact, Error } from "./pages";
 import { Navbar } from "./components";
 function App() {
+  const links = [
+    { name: "home", slug: "/" },
+    { name: "about", slug: "/about" },
+    { name: "contact", slug: "/contact" },
+  ];
   return (
     <div className={styles.app}>
-      <Navbar />
+      <Navbar links={links} title='Akhere Ihoeghinlan' />
       <main>
         <Switch>
           <Route exact path='/'>
