@@ -10,7 +10,7 @@ function App() {
   ];
   return (
     <div className={styles.app}>
-      <Navbar links={links} title='Akhere Ihoeghinlan' />
+      <Navbar links={links} title='Akhere I' />
       <main>
         <Switch>
           <Route exact path='/'>
