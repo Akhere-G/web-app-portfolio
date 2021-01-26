@@ -1,8 +1,8 @@
 :root {
   --primary-color: #111131;
   --secondary-color: #555580;
-  --text-primary-color: #f1f7ff;
-  --text-secondary-color: #ffc;
+  --primary-light: #f1f7ff;
+  --secondary-light: #ffc;
   --transition: ease-in-out 300ms;
   --max-width: 950px;
 }
@@ -45,15 +45,15 @@ a:focus {
 button {
   padding: 5px;
   border-radius: 5px;
-  border: solid 1px var(--text-primary-color);
+  border: solid 1px var(--primary-light);
   background: rgba(0, 0, 0, 0.3);
-  color: var(--text-primary-color);
+  color: var(--primary-light);
   transition: var(--transition);
 }
 button:hover {
   background: rgba(0, 0, 0, 0.7);
-  color: var(--text-secondary-color);
-  border: solid 1px var(--text-secondary-color);
+  color: var(--secondary-light);
+  border: solid 1px var(--secondary-light);
   transition: var(--transition);
   cursor: pointer;
 }
