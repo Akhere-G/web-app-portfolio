@@ -13,7 +13,7 @@
 }
 
 .moving {
-  background-color: var(--text-primary-color);
+  background-color: var(--primary-light);
   color: var(--primary-color);
   transition: var(--transition);
   top: 0;
@@ -29,11 +29,10 @@
   position: absolute;
   align-items: center;
   flex-direction: column;
-  background-color: #eee;
-  color: var(--primary-color);
+  background-color: #111d;
+  color: #fff;
   z-index: 998;
-
-  padding: 1em;
+  padding: 1em 0;
   height: 100vh;
   right: -500px;
 }
@@ -54,22 +53,29 @@
 }
 
 .modal li {
-  margin-bottom: 1em;
-  color: var(--primary-color);
+  padding: 0.5em 1em;
+  width: 100%;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.modal li:hover {
+  transition: var(--transition);
+  background-color: #000d;
 }
 
 .modal > li > a {
-  color: var(--primary-color);
+  color: var(--primary-light);
 }
 
 .modal > li > a:hover {
-  color: var(--secondary-color);
+  color: var(--secondary-light);
 }
 .navbarBtn {
   font-size: 0.25rem;
   background-color: var(--secondary-bg-1);
   border: 1px solid;
-  border-color: var(--text-primary-color);
+  border-color: var(--primary-light);
 
   border-radius: 7px;
   padding: 0.3rem;
@@ -90,6 +96,7 @@
 @media screen and (min-width: 600px) {
   .projectLinks {
     padding: 0;
+    background-color: #111d;
   }
 
   .modal {
@@ -115,8 +122,12 @@
     pointer-events: all;
   }
 
-  .modal li {
+  .modal > li {
     margin-bottom: 0em;
+  }
+
+  .modal > li:hover {
+    background-color: transparent;
   }
 
   .navbarBtn {

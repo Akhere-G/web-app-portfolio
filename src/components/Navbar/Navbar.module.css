@@ -1,6 +1,5 @@
 .container {
-  background-color: var(--text-primary-color);
-  color: var(--primary-color);
+  background-color: var(--primary-light);
 
   z-index: 999;
   width: 100%;
@@ -79,17 +78,18 @@
   padding: 0.5em 0;
   display: block;
   transition: var(--transition);
+  color: var(--primary-light);
 }
 
 .navbarLink a:hover {
   background-color: var(--secondary-color);
-  color: var(--text-secondary-color);
+  color: var(--secondary-light);
 
   transition: var(--transition);
 }
 
 .activeLink a {
-  color: var(--text-secondary-color);
+  color: var(--secondary-light);
 }
 
 .navbarBtn {
