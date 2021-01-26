@@ -3,7 +3,7 @@
   padding: 1em 0;
   left: 0;
   transition: var(--transition);
-  z-index: 10;
+  z-index: 999;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -13,9 +13,11 @@
 }
 
 .moving {
-  background-color: #000022dd;
+  background-color: var(--text-primary-color);
+  color: var(--primary-color);
   transition: var(--transition);
   top: 0;
+  box-shadow: 1px 2px 4px #0005;
 }
 
 .moving .modal {
@@ -27,7 +29,10 @@
   position: absolute;
   align-items: center;
   flex-direction: column;
-  background-color: #001d;
+  background-color: #eee;
+  color: var(--primary-color);
+  z-index: 998;
+
   padding: 1em;
   height: 100vh;
   right: -500px;
@@ -50,15 +55,38 @@
 
 .modal li {
   margin-bottom: 1em;
+  color: var(--primary-color);
 }
 
-.toggleBtn {
-  margin-right: 1em;
+.modal > li > a {
+  color: var(--primary-color);
+}
+
+.modal > li > a:hover {
+  color: var(--secondary-color);
+}
+.navbarBtn {
+  font-size: 0.25rem;
+  background-color: var(--secondary-bg-1);
+  border: 1px solid;
+  border-color: var(--text-primary-color);
+
+  border-radius: 7px;
+  padding: 0.3rem;
+  margin-right: 0.7rem;
+  color: var(--primary-text);
   cursor: pointer;
-  display: flex;
-  align-items: center;
+  transition: var(--transition);
 }
 
+.navbarBtn:hover {
+  transform: rotate(90deg);
+  background-color: transparent;
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+
+  transition: var(--transition);
+}
 @media screen and (min-width: 600px) {
   .projectLinks {
     padding: 0;
@@ -91,7 +119,7 @@
     margin-bottom: 0em;
   }
 
-  .toggleBtn {
+  .navbarBtn {
     display: none;
     opacity: 0;
     pointer-events: none;

@@ -43,7 +43,7 @@ const ProjectLinks = ({ projectLinks }) => {
       </ul>
 
       <div
-        className={styles.toggleBtn}
+        className={styles.navbarBtn}
         onClick={() => {
           setOpen(prev => !prev);
         }}

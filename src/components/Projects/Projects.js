@@ -1,18 +1,12 @@
 import React from "react";
 import Project from "./Project/Project";
+import styles from "./Projects.module.css";
 
 const Projects = ({ projects }) => {
   return (
-    <ul
-      className='section'
-      style={{
-        "overflow-x": "hidden",
-      }}
-    >
+    <ul className={styles.projects}>
       {projects.map((project, index) => {
-        return (
-          <Project key={index} {...project} slideInRight={index % 2 === 0} />
-        );
+        return <Project key={index} {...project} />;
       })}
     </ul>
   );

@@ -4,8 +4,6 @@
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background-color: #234888;
-  background-image: url("./assets/hero.svg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -21,7 +19,7 @@
   width: 100%;
   text-align: center;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #fff;
   margin-top: auto;
   margin-bottom: 0;
 }

@@ -1,20 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
 import styles from "./Project.module.css";
 
-const Project = ({
-  title,
-  slug,
-  url,
-  img,
-  desc,
-  github,
-  technologies,
-  slideInRight,
-}) => {
+const Project = ({ title, slug, url, img, desc, github, technologies }) => {
   const [isVisible, setIsVisible] = useState(false);
   const projectRef = useRef(null);
-  const show = slideInRight ? styles.slideInRight : styles.slideInLeft;
-  const hide = slideInRight ? styles.slideOutRight : styles.slideOutLeft;
+  const show = styles.popIn;
+  const hide = styles.popOut;
 
   useEffect(() => {
     const checkIsVisible = () => {
@@ -52,20 +43,20 @@ const Project = ({
         <h3>{title}</h3>
         <p className={styles.desc}>{desc}</p>
         <div className={styles.data}>
-          <span>Url:</span>
+          <span>Url</span>
           <a href={url} rel='noreferrer' target='_blank'>
             {url}
           </a>
         </div>
         <div className={styles.data}>
-          <span>Github:</span>
+          <span>Github</span>
           <a href={github} rel='noreferrer' target='_blank'>
             {github}
           </a>
         </div>
 
         <div className={styles.data}>
-          <span>Technologies:</span>
+          <span>Technologies</span>
           <p>{technologies.join(", ")}</p>
         </div>
       </footer>

@@ -4,6 +4,7 @@
 
   z-index: 999;
   width: 100%;
+  box-shadow: 1px 2px 4px #0005;
 }
 
 .navbar {
@@ -17,6 +18,7 @@
   z-index: 999;
   height: 50px;
   animation: slideIn 600ms ease-in 200ms backwards;
+
   position: relative;
 }
 
@@ -38,7 +40,7 @@
 }
 
 .logo:hover {
-  color: var(--text-secondary-color);
+  color: var(--secondary-color);
 }
 
 .navbarLinks {
@@ -101,8 +103,8 @@
 .navbarBtn:hover {
   transform: rotate(90deg);
   background-color: transparent;
-  color: var(--text-secondary-color);
-  border-color: var(--text-secondary-color);
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
   transition: var(--transition);
 }
 
@@ -163,12 +165,12 @@
 
   .navbarLink a:hover {
     background-color: transparent;
-    color: var(--text-secondary-color);
+    color: var(--secondary-color);
 
     transition: var(--transition);
   }
 
   .activeLink a {
-    color: var(--text-secondary-color);
+    color: var(--secondary-color);
   }
 }

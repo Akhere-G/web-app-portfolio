@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #357;
-  --secondary-color: #135;
+  --primary-color: #111131;
+  --secondary-color: #555580;
   --text-primary-color: #f1f7ff;
-  --text-secondary-color: #fc4;
+  --text-secondary-color: #ffc;
   --transition: ease-in-out 300ms;
   --max-width: 950px;
 }
@@ -19,8 +19,8 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--text-primary-color);
-  background: var(--primary-color);
+  color: var(--primary-color);
+  background: #eee;
   position: relative;
 }
 
@@ -30,13 +30,13 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--text-primary-color);
+  color: var(--primary-color);
   transition: var(--transition);
 }
 
 a:hover,
 a:focus {
-  color: var(--text-secondary-color);
+  color: var(--secondary-color);
   transition: var(--transition);
   cursor: pointer;
   outline: none;
