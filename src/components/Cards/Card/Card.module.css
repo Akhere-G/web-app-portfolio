@@ -1,0 +1,13 @@
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  min-width: 30%;
+}
+
+@media screen and (min-width: 800px) {
+  .card {
+    min-width: 20%;
+  }
+}

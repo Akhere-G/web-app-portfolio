@@ -10,7 +10,6 @@ const Contact = () => {
         you.
       </p>
       <br />
-      <hr />
 
       <p>Email: AkhereAIhoeghinlan@gmail.com</p>
       <p>
