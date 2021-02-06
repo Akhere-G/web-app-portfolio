@@ -9,12 +9,12 @@ import gatsbyjsIcon from "../../assets/gatsbyjs.svg";
 import { Cards } from "../../components";
 
 const cards = [
-  { title: "react", src: ReactIcon },
-  { title: "mongoDB", src: mongoDbIcon },
-  { title: "nodejs", src: nodejsIcon },
-  { title: "firebase", src: firebaseIcon },
-  { title: "expressjs", src: expressjsIcon },
-  { title: "gatsbyjs", src: gatsbyjsIcon },
+  { title: "react", src: ReactIcon, position: 0 },
+  { title: "mongoDB", src: mongoDbIcon, position: 1 },
+  { title: "nodejs", src: nodejsIcon, position: 2 },
+  { title: "firebase", src: firebaseIcon, position: 3 },
+  { title: "expressjs", src: expressjsIcon, position: 4 },
+  { title: "gatsbyjs", src: gatsbyjsIcon, position: 5 },
 ];
 const About = () => {
   return (

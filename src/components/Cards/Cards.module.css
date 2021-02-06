@@ -1,8 +1,10 @@
 .cards {
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 1rem;
 }
