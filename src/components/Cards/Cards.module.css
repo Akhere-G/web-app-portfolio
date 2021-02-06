@@ -4,7 +4,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: #f0f0f0;
   padding: 1rem;
   border-radius: 1rem;
 }
