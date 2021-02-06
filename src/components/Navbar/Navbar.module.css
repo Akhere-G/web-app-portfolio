@@ -50,11 +50,11 @@
   pointer-events: none;
 
   opacity: 0;
-
+  box-shadow: 1px 1px 3px #0005;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--primary-color);
+  background-color: #ddd;
   transition: var(--transition);
   z-index: 998;
 }
@@ -78,18 +78,16 @@
   padding: 0.5em 0;
   display: block;
   transition: var(--transition);
-  color: var(--primary-light);
+  color: var(--primary);
 }
 
 .navbarLink a:hover {
-  background-color: var(--secondary-color);
-  color: var(--secondary-light);
-
+  background-color: #ccc;
   transition: var(--transition);
 }
 
 .activeLink a {
-  color: var(--secondary-light);
+  color: var(--secondary-color);
 }
 
 .navbarBtn {
@@ -129,6 +127,7 @@
     right: 0rem;
     animation: slideInLinks 1200ms ease-in-out 800ms forwards;
     opacity: 0;
+    box-shadow: none;
 
     position: relative;
   }
