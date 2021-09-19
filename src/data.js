@@ -7,6 +7,19 @@ import exerciseTrackerImg from "./assets/exerciseTrackerPage.jpeg";
 
 const data = [
   {
+    title: "Expense Tracker",
+    slug: "expense-tracker",
+    url: "https://ai-expense-tracker.herokuapp.com/",
+    img: expenseTrackerImg,
+    desc: `An app that tracks expenses and invoices. Users can make an account or sign up with google. 
+    Once logged in, users can see their transactions, add new transactions, and edit and delete their transactions. 
+    Express is used for the API, MongoDB is used for the database, Styled Components is used for styling and state 
+    is managed by redux.`,
+    github: ["https://github.com/Akhere-G/Expense-tracker-app", "https://github.com/Akhere-G/expense-tracker-backend"],
+    technologies: ["MongoDB", "Express", "React", "Node", "Redux", "TypeScript", "Styled Components"],
+    
+  },
+  {
     title: "Storytime",
     slug: "storytime-app",
 
@@ -15,12 +28,12 @@ const data = [
     desc: `Storytime is a social app that allows users to create and 
     share stories. Users can create accounts, login and add their 
     favourite stories for other users to see. Stories can also be 
-    deleted and added. Authentication is done by json web tokens, 
+    deleted and added. JSON web tokens are used for authentication, 
     the front end is built using React, MongoDB is used for the 
-    database, and express and node are used to create the rest api. 
+    database, and express is used to create the rest API. 
     Hosted on heroku free tier so might take sometime to load.`,
-    github: "https://github.com/Akhere-G/auth-storytime",
-    technologies: ["MongoDB", "Express", "React", "Node"],
+    github: ["https://github.com/Akhere-G/auth-storytime"],
+    technologies: ["MongoDB", "Express", "React", "Node", "Redux"],
   },
   {
     title: "Chat App",
@@ -31,7 +44,7 @@ const data = [
     authentication and the database. The app allows users to login and 
     send messages to a public group chat. The user can delete their own 
     messages as well. It is responsive and  mobile friendly.`,
-    github: "https://github.com/Akhere-G/chat-app",
+    github: ["https://github.com/Akhere-G/chat-app"],
     technologies: ["React", "Firebase"],
   },
   {
@@ -44,7 +57,7 @@ const data = [
     is used to load images with a fade in animation. A pagination components is used to display 
     the movies in the given space.`,
 
-    github: "https://github.com/Akhere-G/movie-search-app",
+    github: ["https://github.com/Akhere-G/movie-search-app"],
     technologies: ["React"],
   },
   {
@@ -57,7 +70,7 @@ const data = [
     It is built using react for the front end, Express for the backend, MongoDB for 
     the database and Mongoose for data modelling. The app allows users to make new 
     students and add exercises to existing users. Exercises can be updated and deleted.`,
-    github: "https://github.com/Akhere-G/mern-exercise-tracker-app",
+    github: ["https://github.com/Akhere-G/mern-exercise-tracker-app"],
     technologies: ["MongoDB", "Express", "React", "Node"],
   },
   {
@@ -69,20 +82,8 @@ const data = [
     Gatsby for the front end and Contentful for the CMS. It is responsive and allows blog 
     posts with images to be shown`,
 
-    github: "https://github.com/Akhere-G/gatsby-blog-site",
+    github: ["https://github.com/Akhere-G/gatsby-blog-site"],
     technologies: ["React", "Gatsby", "Contentful"],
-  },
-  {
-    title: "Expense Tracker",
-    slug: "expense-tracker",
-    url: "https://ai-expense-tracker.netlify.app/",
-    img: expenseTrackerImg,
-    desc: `An app that tracks expenses and income. Users can add a title for the expense/income and an
-    amount. A negative amount for an expense and a positive amount for an
-    income. Filter transactions to show only expenses, incomes or both. 
-    A reducer is used to control the state.`,
-    github: "https://github.com/Akhere-G/Expense-tracker-app",
-    technologies: ["React"],
   },
 ];
 

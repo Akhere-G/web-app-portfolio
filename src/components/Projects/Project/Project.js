@@ -50,9 +50,11 @@ const Project = ({ title, slug, url, img, desc, github, technologies }) => {
         </div>
         <div className={styles.data}>
           <span>Github</span>
-          <a href={github} rel='noreferrer' target='_blank'>
-            {github}
-          </a>
+          {github.map((link) => (
+            <a href={link} key={link} rel='noreferrer' target='_blank'>
+              {link}
+            </a>
+          ))}
         </div>
 
         <div className={styles.data}>
