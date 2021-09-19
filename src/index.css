@@ -1,6 +1,7 @@
 :root {
   --primary-color: #111111;
   --secondary-color: #333380;
+  --focus: #6666b3;
   --primary-light: #fdfdfd;
   --secondary-light: #fff;
   --transition: ease-in-out 300ms;
