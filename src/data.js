@@ -15,7 +15,7 @@ const data = [
     Once logged in, users can see their transactions, add new transactions, and edit and delete their transactions. 
     Express is used for the API, MongoDB is used for the database, Styled Components is used for styling and state 
     is managed by redux. The example user account is email: 'example@example.com' and password: '123456'`,
-    github: ["https://github.com/Akhere-G/Expense-tracker-app", "https://github.com/Akhere-G/expense-tracker-backend"],
+    github: ["https://github.com/Akhere-G/expense-tracker-frontend", "https://github.com/Akhere-G/expense-tracker-backend"],
     technologies: ["MongoDB", "Express", "React", "Node", "Redux", "TypeScript", "Styled Components"],
     
   },
