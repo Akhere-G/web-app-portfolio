@@ -9,7 +9,7 @@ const data = [
   {
     title: "Expense Tracker",
     slug: "expense-tracker",
-    url: "https://ai-expense-tracker.herokuapp.com/",
+    url: "https://ai-expense-tracker.netlify.app/",
     img: expenseTrackerImg,
     desc: `An app that tracks expenses and invoices. Users can make an account or sign up with google. 
     Once logged in, users can see their transactions, add new transactions, and edit and delete their transactions. 
