@@ -1,7 +1,7 @@
 import chatAppImg from "./assets/chatAppPage.jpeg";
 import storytimeImg from "./assets/storytimePage.jpeg";
 import movieSearchImg from "./assets/movieSearchPage.jpeg";
-import blogSiteImg from "./assets/blogSitePage.jpeg";
+import eventPageImg from "./assets/EventPage.png";
 import expenseTrackerImg from "./assets/expenseTrackerPage.jpeg";
 import exerciseTrackerImg from "./assets/exerciseTrackerPage.jpeg";
 
@@ -15,9 +15,31 @@ const data = [
     Once logged in, users can see their transactions, add new transactions, and edit and delete their transactions. 
     Express is used for the API, MongoDB is used for the database, Styled Components is used for styling and state 
     is managed by redux. The example user account is email: 'example@example.com' and password: '123456'`,
-    github: ["https://github.com/Akhere-G/expense-tracker-frontend", "https://github.com/Akhere-G/expense-tracker-backend"],
-    technologies: ["MongoDB", "Express", "React", "Node", "Redux", "TypeScript", "Styled Components"],
-    
+    github: [
+      "https://github.com/Akhere-G/expense-tracker-frontend",
+      "https://github.com/Akhere-G/expense-tracker-backend",
+    ],
+    technologies: [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node",
+      "Redux",
+      "TypeScript",
+      "Styled Components",
+    ],
+  },
+  {
+    title: "Events Page",
+    slug: "Events-page",
+    url: "https://communitythf.vercel.app/",
+    img: eventPageImg,
+    desc: `A blog site built in Next.js that lists the different events available for a community based organisation. 
+    Event pages are generated using static generation and data for events are fetched from Contentful. Events are listed 
+    by category, and each event has a page that is built using a dynamic route.`,
+
+    github: ["https://github.com/Akhere-G/nextjs-blog"],
+    technologies: ["React", "NextJs", "Contentful"],
   },
   {
     title: "Storytime",
@@ -72,18 +94,6 @@ const data = [
     students and add exercises to existing users. Exercises can be updated and deleted.`,
     github: ["https://github.com/Akhere-G/mern-exercise-tracker-app"],
     technologies: ["MongoDB", "Express", "React", "Node"],
-  },
-  {
-    title: "Blog Site",
-    slug: "blog-site",
-    url: "https://ai-blog-site.netlify.app/",
-    img: blogSiteImg,
-    desc: `A blog site that displays markdown blog posts. This website is built using 
-    Gatsby for the front end and Contentful for the CMS. It is responsive and allows blog 
-    posts with images to be shown`,
-
-    github: ["https://github.com/Akhere-G/gatsby-blog-site"],
-    technologies: ["React", "Gatsby", "Contentful"],
   },
 ];
 
