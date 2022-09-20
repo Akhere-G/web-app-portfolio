@@ -7,6 +7,10 @@
   position: relative;
 }
 
+.projectImg {
+  min-height: 210px;
+}
+
 .popIn {
   animation: popIn 800ms ease-in-out 50ms both;
 }

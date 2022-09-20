@@ -1,8 +1,32 @@
 import chatAppImg from "./assets/chatAppPage.jpeg";
 import movieSearchImg from "./assets/movieSearchPage.jpeg";
-import eventPageImg from "./assets/EventPage.png";
+import eventPageImg from "./assets/eventPage.jpg";
+import expenseTrackerImg from "./assets/expenseTrackerPage.png";
 
 const data = [
+  {
+    title: "Expense Tracker",
+    slug: "expense-tracker",
+    url: "https://ai-expense-tracker.netlify.app/",
+    img: expenseTrackerImg,
+    desc: `An app that tracks expenses and invoices. Users can make an account or sign up with google. 
+    Once logged in, users can see their transactions, add new transactions, and edit and delete their transactions. 
+    Express is used for the API, MongoDB is used for the database, Styled Components is used for styling and state 
+    is managed by redux. The example user account is email: 'example@example.com' and password: '123456'`,
+    github: [
+      "https://github.com/Akhere-G/expense-tracker-frontend",
+      "https://github.com/Akhere-G/expense-tracker-backend",
+    ],
+    technologies: [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node",
+      "Redux",
+      "TypeScript",
+      "Styled Components",
+    ],
+  },
   {
     title: "Events Page",
     slug: "Events-page",
@@ -13,7 +37,7 @@ const data = [
     by category, and each event has a page that is built using a dynamic route.`,
 
     github: ["https://github.com/Akhere-G/nextjs-blog"],
-    technologies: ["React", "NextJs", "Contentful"],
+    technologies: ["React", "NextJs", "Node", "Contentful"],
   },
   {
     title: "Chat App",

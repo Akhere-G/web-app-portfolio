@@ -13,7 +13,7 @@ const Project = ({ title, slug, url, img, desc, github, technologies }) => {
         const rect = projectRef.current.getBoundingClientRect();
         const projectTop = rect.top + 100;
         const height = window.innerHeight;
-        if ((projectTop => 0) && projectTop <= height) {
+        if (((projectTop) => 0) && projectTop <= height) {
           setIsVisible(true);
         } else {
           setIsVisible(false);
@@ -36,7 +36,7 @@ const Project = ({ title, slug, url, img, desc, github, technologies }) => {
       name={slug}
     >
       <div id={slug} className={styles.target}></div>
-      <header>
+      <header className={styles.projectImg}>
         <img src={img} alt={title} />
       </header>
       <footer>
@@ -44,14 +44,14 @@ const Project = ({ title, slug, url, img, desc, github, technologies }) => {
         <p className={styles.desc}>{desc}</p>
         <div className={styles.data}>
           <span>Url</span>
-          <a href={url} rel='noreferrer' target='_blank'>
+          <a href={url} rel="noreferrer" target="_blank">
             {url}
           </a>
         </div>
         <div className={styles.data}>
           <span>Github</span>
           {github.map((link) => (
-            <a href={link} key={link} rel='noreferrer' target='_blank'>
+            <a href={link} key={link} rel="noreferrer" target="_blank">
               {link}
             </a>
           ))}
