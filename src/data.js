@@ -2,8 +2,42 @@ import chatAppImg from "./assets/chatAppPage.jpeg";
 import movieSearchImg from "./assets/movieSearchPage.jpeg";
 import eventPageImg from "./assets/eventPage.jpg";
 import expenseTrackerImg from "./assets/expenseTrackerPage.png";
+import taskFlowPage from "./assets/taskFlowPage.png"
+import tripTrackPage from "./assets/tripTrackPage.png"
 
 const data = [
+  {
+    title: "TripTrack",
+    slug: "trip-track",
+    url: "https://tripapp-752853711822.europe-west2.run.app",
+    img: tripTrackPage,
+    desc: `A collaborative travel and event planning application featuring integrated map and calendar views alongside AI-driven itinerary automation. Users can leverage AI to instantly generate daily plans, optimise routes to reduce travel times, and fetch tailored local travel tips. The platform supports real-time group collaboration with distinct Admin and Viewer roles, Google-powered event and place discovery, and seamless calendar exports for offline access.`,
+    github: [
+      "https://github.com/Akhere-G/event-planner",
+    ],
+    technologies: [
+      "React",
+      "Redux Toolkit (RTK Query)",
+      "Flask",
+      "SQLAlchemy",
+    ],
+  },
+  {
+    title: "TaskFlow",
+    slug: "task-flow",
+    url: "https://taskflow-752853711822.europe-west2.run.app", 
+    img: taskFlowPage,
+    desc: `A comprehensive productivity and task management application featuring flexible list and calendar views alongside AI-powered workflow automation. It includes smart habit tracking with future scheduling, natural language quick-add tools, and an AI coach for daily prioritisation and project decomposition. The platform also integrates focus-boosting features like a Pomodoro timer with automated logging, alongside detailed workload insights, activity maps, and deadline tracking visualisations.`,
+    github: [
+      "https://github.com/Akhere-G/task-manager",
+    ],
+    technologies: [
+      "React",
+      "Flask",
+      "MySQL",
+    ],
+  },
+
   {
     title: "Expense Tracker",
     slug: "expense-tracker",
