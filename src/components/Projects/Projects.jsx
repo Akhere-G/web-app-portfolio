@@ -1,4 +1,3 @@
-import React from "react";
 import Project from "./Project/Project";
 import styles from "./Projects.module.css";
 

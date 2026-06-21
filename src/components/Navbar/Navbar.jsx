@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./Navbar.module.css";
 import { Link, useLocation } from "react-router-dom";
-import { Menu } from "@material-ui/icons";
 import PropTypes from "prop-types";
+import { Menu } from 'lucide-react';
 
 const Navbar = ({ links, title }) => {
   const [open, setOpen] = useState(false);

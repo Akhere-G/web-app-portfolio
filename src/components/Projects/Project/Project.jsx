@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import styles from "./Project.module.css";
 
 const Project = ({ title, slug, url, img, desc, github, technologies }) => {
@@ -13,7 +13,7 @@ const Project = ({ title, slug, url, img, desc, github, technologies }) => {
         const rect = projectRef.current.getBoundingClientRect();
         const projectTop = rect.top + 100;
         const height = window.innerHeight;
-        if (((projectTop) => 0) && projectTop <= height) {
+        if (((projectTop) >= 0) && projectTop <= height) {
           setIsVisible(true);
         } else {
           setIsVisible(false);

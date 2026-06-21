@@ -1,97 +1,64 @@
 .container {
   background-color: var(--primary-light);
-
   z-index: 999;
   width: 100%;
   box-shadow: 1px 2px 4px #0005;
+  position: relative;
 }
 
 .navbar {
-  width: 100%;
+  width: 100%; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.1em 1em;
-  margin: 0 auto;
-  max-width: var(--max-width);
-  z-index: 999;
   height: 50px;
   animation: slideIn 600ms ease-in 200ms backwards;
-
   position: relative;
+  z-index: 1000;
 }
 
 @keyframes slideIn {
-  0% {
-    top: -10rem;
-    opacity: 0;
-  }
-
-  100% {
-    top: -0rem;
-    opacity: 1;
-  }
+  0% { transform: translateY(-100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
 }
 
 .logo {
   font-size: 2rem;
   color: var(--primary-color);
-}
-
-.logo:hover {
-  color: var(--focus);
+  cursor: pointer;
 }
 
 .navbarLinks {
   position: absolute;
-  right: 0;
+  top: 50px;
   left: 0;
-  top: -10em;
+  width: 100%;
   pointer-events: none;
-
   opacity: 0;
-  box-shadow: 1px 1px 3px #0005;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #000d;
   transition: var(--transition);
   z-index: 998;
-
-  
 }
 
-@media screen and (max-width: 600px) {
-  .navbarLinks {
-    color: white;
-  }  
-}
-
-.open {
-  top: 3rem;
+.navbarLinks.open {
   opacity: 1;
-  transition: var(--transition);
   pointer-events: all;
 }
 
-.navbarLink {
-  width: 100%;
-  text-align: center;
-  transition: var(--transition);
-}
-
 .navbarLink > a {
-  width: 100%;
-  height: 100%;
-  padding: 0.5em 0;
   display: block;
-  transition: var(--transition);
-  color: var(--primary);
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  text-transform:capitalize ;
 }
 
 .navbarLink a:hover {
   background-color: #000f;
-  transition: var(--transition);
 }
 
 .activeLink a {
@@ -99,85 +66,30 @@
 }
 
 .navbarBtn {
-  font-size: 0.25rem;
-  background-color: var(--secondary-bg-1);
-  color: var(--primary-text);
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.navbarBtn:hover {
-  transform: rotate(90deg);
-  background-color: transparent;
-  color: var(--focus);
-  border-color: var(--focus);
-  transition: var(--transition);
+  display: block;
 }
 
 @media screen and (min-width: 600px) {
-  .navbarBtn {
-    display: none;
-    pointer-events: none;
-  }
-
   .navbarLinks {
-    flex-direction: row;
-    flex: 1;
-    margin-left: 1em;
-    margin-top: 0;
-    justify-content: flex-end;
-    background-color: transparent;
-    padding-top: 0;
-    padding-bottom: 0;
+    position: static;
     opacity: 1;
     pointer-events: all;
-    top: 0;
-    right: 0rem;
-    animation: slideInLinks 1200ms ease-in-out 800ms forwards;
-    opacity: 0;
-    box-shadow: none;
-
-    position: relative;
-  }
-
-  @keyframes slideInLinks {
-    0% {
-      opacity: 0;
-      left: -5rem;
-    }
-
-    75% {
-      opacity: 0.9;
-      left: 1rem;
-    }
-
-    100% {
-      left: 0rem;
-      opacity: 1;
-    }
-  }
-  .navbarLink {
-    width: auto;
-    height: auto;
-
-    margin-right: 1em;
-  }
-  .navbarLink > a {
-    width: auto;
-    height: auto;
-    padding: auto;
-    display: block;
-    color: var(--primary);
-  }
-
-  .navbarLink a:hover {
+    flex-direction: row;
+    gap: 1rem;
     background-color: transparent;
-    color: var(--focus);
-
-    transition: var(--transition);
+    box-shadow: none;
+    width: auto;
   }
 
-  .activeLink a {
-    color: var(--focus);
+  .navbarLink > a {
+    color: black; 
+    padding: 0.5em;
   }
+
+  .navbarBtn {
+  display: none;
 }
+}
+
+
+

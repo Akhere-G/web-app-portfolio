@@ -1,21 +1,25 @@
-import React from "react";
 import ReactIcon from "../../assets/reactIcon.svg";
 import mongoDbIcon from "../../assets/mongodb.svg";
 import nodejsIcon from "../../assets/nodejs.svg";
-import firebaseIcon from "../../assets/firebase.svg";
 import expressjsIcon from "../../assets/expressjs.svg";
-import gatsbyjsIcon from "../../assets/gatsbyjs.svg";
+import sqlalchemyIcon from "../../assets/sqlalchemy.png";
+import fastAPIIcon from "../../assets/fastAPIIcon.png";
+import nextJsIcon from "../../assets/nextJsIcon.png";
+import flaskIcon from "../../assets/flaskIcon.png";
 
 import { Cards } from "../../components";
 
 const cards = [
-  { title: "react", src: ReactIcon, position: 0 },
-  { title: "mongoDB", src: mongoDbIcon, position: 1 },
-  { title: "nodejs", src: nodejsIcon, position: 2 },
-  { title: "firebase", src: firebaseIcon, position: 3 },
-  { title: "expressjs", src: expressjsIcon, position: 4 },
-  { title: "gatsbyjs", src: gatsbyjsIcon, position: 5 },
+  { title: "react", src: ReactIcon },
+  { title: "nextJs", src: nextJsIcon },
+  { title: "fastAPI", src: fastAPIIcon },
+  { title: "sqlalchemy", src: sqlalchemyIcon },
+  { title: "flaskIcon", src: flaskIcon },
+  { title: "mongoDB", src: mongoDbIcon },
+  { title: "nodejs", src: nodejsIcon },
+  { title: "expressjs", src: expressjsIcon },
 ];
+
 const About = () => {
   return (
     <section className='section'>

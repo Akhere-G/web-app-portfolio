@@ -1,5 +1,4 @@
-import React from "react";
-import { Projects, ProjectLinks } from "../../components/";
+import { Projects, ProjectLinks } from "../../components/index.js";
 import data from "../../data.js";
 const Home = () => {
   const projectLinks = data.map(project => ({

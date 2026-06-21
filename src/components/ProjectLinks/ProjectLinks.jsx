@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import styles from "./ProjectLinks.module.css";
-import { Link } from "react-scroll";
-import MenuIcon from "@material-ui/icons/Menu";
+import { Menu } from "lucide-react";
+
 
 const ProjectLinks = ({ projectLinks }) => {
   const [isMoving, setIsMoving] = useState(false);
@@ -33,11 +33,16 @@ const ProjectLinks = ({ projectLinks }) => {
       >
         {projectLinks.map((link, index) => {
           return (
-            <li key={index}>
-              <Link to={`${link.slug}`} smooth={true} duration={1000}>
+            <button className={styles.projectLink} key={index} onClick={() => {
+              const el = document.getElementById(link.slug)
+              if (el) {
+                el.scrollIntoView({behavior: "smooth"})
+              }
+            }}>
+
                 {link.title}
-              </Link>
-            </li>
+
+            </button>
           );
         })}
       </ul>
@@ -48,7 +53,7 @@ const ProjectLinks = ({ projectLinks }) => {
           setOpen(prev => !prev);
         }}
       >
-        <MenuIcon />
+        <Menu />
       </div>
     </div>
   );

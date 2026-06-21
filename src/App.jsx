@@ -1,7 +1,8 @@
 import styles from "./App.module.css";
-import { Switch, Route } from "react-router-dom";
 import { Home, About, Contact, Error } from "./pages";
 import { Navbar } from "./components";
+import {  Route, Routes } from "react-router-dom";
+
 function App() {
   const links = [
     { name: "home", slug: "/" },
@@ -12,20 +13,12 @@ function App() {
     <div className={styles.app}>
       <Navbar links={links} title='Akhere I' />
       <main>
-        <Switch>
-          <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route exact path='/About'>
-            <About />
-          </Route>
-          <Route exact path='/Contact'>
-            <Contact />
-          </Route>
-          <Route exact path='*'>
-            <Error />
-          </Route>
-        </Switch>
+       <Routes>
+          <Route exact path='/' element={<Home />}/>
+          <Route exact path='/About' element={<About />}/>
+          <Route exact path='/Contact' element={<Contact />} />
+          <Route exact path='*' element={<Error />}/>
+        </Routes>
       </main>
       <footer className={styles.footer}>
         <span>

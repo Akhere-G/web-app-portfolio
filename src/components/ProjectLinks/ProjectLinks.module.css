@@ -12,6 +12,21 @@
   top: -800px;
 }
 
+.projectLink {
+  border: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: -0.04rem;
+}
+
+.projectLink:hover {
+  border: none;
+  background: none;
+  color: #bbbbf7
+}
+
+
 .moving {
   background-color: var(--primary-light);
   color: var(--primary-color);

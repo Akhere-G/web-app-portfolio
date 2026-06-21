@@ -1,11 +1,29 @@
-import chatAppImg from "./assets/chatAppPage.jpeg";
 import movieSearchImg from "./assets/movieSearchPage.jpeg";
-import eventPageImg from "./assets/eventPage.jpg";
 import expenseTrackerImg from "./assets/expenseTrackerPage.png";
 import taskFlowPage from "./assets/taskFlowPage.png"
 import tripTrackPage from "./assets/tripTrackPage.png"
+import gainsPage from "./assets/gainsPage.png"
 
 const data = [
+  {
+    title: "Gains",
+    slug: "gains",
+    url: "https://exercise-tracker-frontend-752853711822.europe-west1.run.app/",
+    img: gainsPage,
+    desc: `The ultimate companion to build custom workout routines, effortlessly log your training sessions, and beautifully visualise your consistency over time.`,
+    github: [
+      "https://github.com/Akhere-G/exercise-tracker",
+    ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "NextJs",
+      "Tailwind",
+      "Zustand",
+      "FastAPI",
+      "SQLAlchemy",
+    ],
+  },
   {
     title: "TripTrack",
     slug: "trip-track",
@@ -17,7 +35,9 @@ const data = [
     ],
     technologies: [
       "React",
+      "TypeScript",
       "Redux Toolkit (RTK Query)",
+      "Tailwind",
       "Flask",
       "SQLAlchemy",
     ],
@@ -33,8 +53,11 @@ const data = [
     ],
     technologies: [
       "React",
+      "TypeScript",
+      "Tailwind",
+      "Tanstack Query",
       "Flask",
-      "MySQL",
+      "SQLAlchemy",
     ],
   },
 
@@ -61,30 +84,7 @@ const data = [
       "Styled Components",
     ],
   },
-  {
-    title: "Events Page",
-    slug: "Events-page",
-    url: "https://communitythf.vercel.app/",
-    img: eventPageImg,
-    desc: `A blog site built in Next.js that lists the different events available for a community based organisation. 
-    Event pages are generated using static generation and data for events are fetched from Contentful. Events are listed 
-    by category, and each event has a page that is built using a dynamic route.`,
 
-    github: ["https://github.com/Akhere-G/nextjs-blog"],
-    technologies: ["React", "NextJs", "Node", "Contentful"],
-  },
-  {
-    title: "Chat App",
-    slug: "chat-app",
-    url: "https://chat-app-34dd1.web.app/",
-    img: chatAppImg,
-    desc: `A chat app built using react for the front end and firebase for the 
-    authentication and the database. The app allows users to login and 
-    send messages to a public group chat. The user can delete their own 
-    messages as well. It is responsive and  mobile friendly.`,
-    github: ["https://github.com/Akhere-G/chat-app"],
-    technologies: ["React", "Firebase"],
-  },
   {
     title: "Movie Search",
     slug: "movie-search",
