@@ -58,7 +58,7 @@
 }
 
 .navbarLink a:hover {
-  background-color: #000f;
+  color: #0008;
 }
 
 .activeLink a {
