@@ -8,7 +8,7 @@ const data = [
   {
     title: "TripTrack",
     slug: "trip-track",
-    url: "https://triptrack.uk",
+    url: "https://app.triptrack.uk",
     img: tripTrackPage,
     desc: `A collaborative travel and event planning application featuring integrated map and calendar views alongside AI-driven itinerary automation. Users can leverage AI to instantly generate daily plans, optimise routes to reduce travel times, and fetch tailored local travel tips. The platform supports real-time group collaboration with distinct Admin and Viewer roles, Google-powered event and place discovery, and seamless calendar exports for offline access.`,
     github: [
