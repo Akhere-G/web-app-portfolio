@@ -6,6 +6,24 @@ import gainsPage from "./assets/gainsPage.png"
 
 const data = [
   {
+    title: "TripTrack",
+    slug: "trip-track",
+    url: "https://triptrack.uk",
+    img: tripTrackPage,
+    desc: `A collaborative travel and event planning application featuring integrated map and calendar views alongside AI-driven itinerary automation. Users can leverage AI to instantly generate daily plans, optimise routes to reduce travel times, and fetch tailored local travel tips. The platform supports real-time group collaboration with distinct Admin and Viewer roles, Google-powered event and place discovery, and seamless calendar exports for offline access.`,
+    github: [
+      "https://github.com/Akhere-G/event-planner",
+    ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Redux Toolkit (RTK Query)",
+      "Tailwind",
+      "Flask",
+      "SQLAlchemy",
+    ],
+  },
+  {
     title: "Gains",
     slug: "gains",
     url: "https://exercise-tracker-frontend-752853711822.europe-west1.run.app/",
@@ -24,24 +42,7 @@ const data = [
       "SQLAlchemy",
     ],
   },
-  {
-    title: "TripTrack",
-    slug: "trip-track",
-    url: "https://triptrack.uk",
-    img: tripTrackPage,
-    desc: `A collaborative travel and event planning application featuring integrated map and calendar views alongside AI-driven itinerary automation. Users can leverage AI to instantly generate daily plans, optimise routes to reduce travel times, and fetch tailored local travel tips. The platform supports real-time group collaboration with distinct Admin and Viewer roles, Google-powered event and place discovery, and seamless calendar exports for offline access.`,
-    github: [
-      "https://github.com/Akhere-G/event-planner",
-    ],
-    technologies: [
-      "React",
-      "TypeScript",
-      "Redux Toolkit (RTK Query)",
-      "Tailwind",
-      "Flask",
-      "SQLAlchemy",
-    ],
-  },
+  
   {
     title: "TaskFlow",
     slug: "task-flow",
