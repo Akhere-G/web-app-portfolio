@@ -3,7 +3,7 @@ import expenseTrackerImg from "./assets/expenseTrackerPage.png";
 import taskFlowPage from "./assets/taskFlowPage.png"
 import tripTrackPage from "./assets/tripTrackPage.png"
 import gainsPage from "./assets/gainsPage.png"
-
+import fileQueryPage from "./assets/fileQueryPage.png"
 const data = [
   {
     title: "TripTrack",
@@ -22,7 +22,31 @@ const data = [
       "Flask",
       "SQLAlchemy",
     ],
-  },
+  },{
+  title: "FileQuery",
+  slug: "file-query",
+  url: "https://file-query-frontend-752853711822.europe-west1.run.app/",
+  img: fileQueryPage,
+  desc: `A full-stack document query platform that lets users upload and organise files into project-based knowledge bases, then ask questions using Retrieval-Augmented Generation. The application supports structured document extraction, smart chunking, query rewriting, hybrid semantic and keyword search, vector embeddings, and AI-generated answers grounded in uploaded content.`,
+  github: [
+    "https://github.com/Akhere-G/file-query",
+  ],
+  technologies: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "FastAPI",
+    "Python",
+    "SQLAlchemy",
+    "PostgreSQL",
+    "pgvector",
+    "LangChain",
+    "AWS S3",
+    "AWS SQS",
+    "AWS Lambda",
+    "Amazon Bedrock",
+  ],
+},
   {
     title: "Gains",
     slug: "gains",
